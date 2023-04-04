@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http//thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>This is a Garage with the all cars</h1>
+<div>
+
+    <th:block th:each="msg : ${cars}">
+        <h1 th:text="${msg}"></h1>
+    </th:block>
+</div>
+<a href="/spring_mvc_war_exploded/cars/ "> 0) come back to main page</a>
+</body>
+</html>

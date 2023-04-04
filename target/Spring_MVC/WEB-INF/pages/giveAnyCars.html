@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+</head>
+<body>
+<h>Here is your selected cars</h>
+
+
+<div>
+  <th:block th:each="msg : ${giveAniCars}">
+    <h1 th:text="${msg}"></h1>
+  </th:block>
+</div>
+<a href="/spring_mvc_war_exploded/cars/"> 0) come back to main page</a>
+</body>
+</html>
